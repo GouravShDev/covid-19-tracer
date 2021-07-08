@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import 'react-calendar/dist/Calendar.css';
 import Calendar from './CustomCalendar';
 import virus from '../assests/svg/virus.svg';
 import Navbar from './Navbar';
