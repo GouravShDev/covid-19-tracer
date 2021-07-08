@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: auto;
 }
 
 .react-calendar,
@@ -12,3 +13,15 @@
 .react-calendar *:after {
   text-decoration: none;
 }
+
+/* @media only screen and (max-width: 1200px) {
+  .calendar-container {
+    transform: scale(0.8);
+  }
+}
+
+@media only screen and (max-width: 1032px) {
+  .calendar-container {
+    transform: scale(0.7);
+  }
+} */

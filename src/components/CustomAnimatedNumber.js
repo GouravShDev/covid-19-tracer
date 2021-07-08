@@ -11,7 +11,7 @@ export default function CustomAnimatedNumber({ caseType, textColor, number }) {
             </h2>
             <AnimatedNumber
                 animateToNumber={number}
-                fontStyle={{ fontFamily: "Nunito", fontSize: 40 }}
+                fontStyle={{ fontFamily: "Nunito", fontSize: 'var(--title-size)' }}
                 includeComma
                 config={{ mass: 1, tension: 280, friction: 120 }}
                 onStart={() => console.log("onStart")}

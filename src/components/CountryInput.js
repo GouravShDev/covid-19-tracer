@@ -12,7 +12,10 @@ export default function CountryInput() {
                 placeholder="Country"
                 searchable
                 selected={selected}
-                onSelect={code => setSelected(code)}></ReactFlagsSelect>
+                onSelect={code => {
+                    console.log(code);
+                    setSelected(code)
+                }}></ReactFlagsSelect>
         </div>
     )
 }
