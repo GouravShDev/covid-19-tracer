@@ -1,0 +1,45 @@
+.App {
+  text-align: center;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ============== SVG Animation =============== */
+
+@media (prefers-reduced-motion: no-preference) {
+  .virus-logo {
+    animation: virus-logo-spin normal 100s forwards;
+  }
+}
+.filter-yellow {
+  filter: var(--filter-yellow);
+}
+
+@keyframes virus-logo-spin {
+  from {
+    transform: rotate(0deg) scale(1);
+  }
+  to {
+    transform: rotate(360deg) scale(1.5);
+  }
+}
+
+/* ============== SVG Image =============== */
+
+.virus-img-1 {
+  width: 40rem;
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  overflow-y: hidden;
+  z-index: -1;
+}
+
+.virus-img-2 {
+  width: 30rem;
+  position: absolute;
+  top: 20%;
+  right: -5%;
+  z-index: -1;
+}

@@ -1,0 +1,47 @@
+/* ============= Variable Declaration ============= */
+:root {
+  --body-color: rgb(41, 41, 41);
+  --text-color: white;
+  --logo-color: white;
+  --nav-text-color: rgb(175, 175, 175);
+
+  --body-font: "LeelawUI";
+  --logo-font: "Jokerman";
+
+  /* ================= Image Filter for SVG ================= */
+  --filter-yellow: invert(80%) sepia(88%) saturate(2476%) hue-rotate(8deg)
+    brightness(108%) contrast(79%);
+  --filter-blue: invert(178%) sepia(130%) saturate(440%) hue-rotate(509deg)
+    brightness(108%) contrast(79%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* ============= importing Custom Fonts ============= */
+@font-face {
+  font-family: Jokerman;
+  src: url(assests/fonts/Jokerman-Regular.ttf);
+}
+@font-face {
+  font-family: LeelawUI;
+  src: url(assests/fonts/LeelawUI.ttf);
+}
+
+/* ============= Basic Styling ============= */
+.font-1 {
+  font-family: LeelawUI;
+}
+
+.logo-font {
+  font-family: Jokerman;
+}
+
+body {
+  background-color: var(--body-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

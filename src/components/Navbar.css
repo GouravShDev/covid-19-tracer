@@ -1,0 +1,28 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.2rem;
+}
+
+.nav-logo {
+  color: var(--logo-color);
+}
+
+.nav-link {
+  color: var(--nav-text-color);
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.bg-img {
+  position: relative;
+}
+
+.bg-img img {
+  width: 20rem;
+  position: absolute;
+  right: 50%;
+  top: -12rem;
+  z-index: -1;
+}
