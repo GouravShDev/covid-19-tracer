@@ -20,9 +20,9 @@
 }
 
 .bg-img img {
-  width: 20rem;
+  width: 10vw;
   position: absolute;
   right: 50%;
-  top: -12rem;
+  top: -12vh;
   z-index: -1;
 }

@@ -9,26 +9,28 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .virus-logo {
-    animation: virus-logo-spin normal 100s forwards;
+    animation: virus-logo-spin infinite 30s alternate-reverse;
+  }
+  .virus-img-1 {
+    animation: virus-logo-spin infinite 15s alternate;
+  }
+  .virus-img-2 {
+    animation: virus-logo-spin infinite 20s alternate-reverse;
   }
 }
-.filter-yellow {
-  filter: var(--filter-yellow);
-}
-
 @keyframes virus-logo-spin {
   from {
     transform: rotate(0deg) scale(1);
   }
   to {
-    transform: rotate(360deg) scale(1.5);
+    transform: rotate(360deg) scale(1.2);
   }
 }
 
 /* ============== SVG Image =============== */
 
 .virus-img-1 {
-  width: 40rem;
+  width: 15vw;
   position: absolute;
   display: inline-block;
   left: 0;
@@ -37,7 +39,7 @@
 }
 
 .virus-img-2 {
-  width: 30rem;
+  width: 25vw;
   position: absolute;
   top: 20%;
   right: -5%;

@@ -5,6 +5,8 @@
   --logo-color: white;
   --nav-text-color: rgb(175, 175, 175);
 
+  --title-size: 2vw;
+
   --body-font: "LeelawUI";
   --logo-font: "Jokerman";
 
@@ -42,6 +44,8 @@
 
 body {
   background-color: var(--body-color);
+  /* background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png"); */
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
