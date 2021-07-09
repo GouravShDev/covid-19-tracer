@@ -13,8 +13,8 @@ export default function CountryInput() {
                 searchable
                 selected={selected}
                 onSelect={code => {
-                    console.log(code);
-                    setSelected(code)
+                    //console.log(code);
+                    setSelected(code);
                 }}></ReactFlagsSelect>
         </div>
     )
