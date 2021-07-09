@@ -15,7 +15,6 @@ export default function CountryInput(props) {
                 onSelect={code => {
                     //console.log(code);
                     setSelected(code);
-                    props.api_obj.getData(code, );
                 }}></ReactFlagsSelect>
         </div>
     )

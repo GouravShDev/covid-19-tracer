@@ -67,14 +67,14 @@
 /* ============SearchBar placeholder ================= */
 ::-webkit-input-placeholder {
   /* Edge */
-  color: var(--body-color);
+  color: var(--text-color);
 }
 
 :-ms-input-placeholder {
   /* Internet Explorer */
-  color: var(--body-color);
+  color: var(--text-color);
 }
 
 ::placeholder {
-  color: var(--body-color);
+  color: var(--text-color);
 }
