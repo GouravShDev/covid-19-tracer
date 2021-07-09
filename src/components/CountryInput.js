@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './CountryInput.css'
 import ReactFlagsSelect from 'react-flags-select';
 
-export default function CountryInput() {
+export default function CountryInput(props) {
     const [selected, setSelected] = useState('');
     return (
         <div className="country-input-container">
@@ -15,6 +15,7 @@ export default function CountryInput() {
                 onSelect={code => {
                     //console.log(code);
                     setSelected(code);
+                    props.api_obj.getData(code, );
                 }}></ReactFlagsSelect>
         </div>
     )
