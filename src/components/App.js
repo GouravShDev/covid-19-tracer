@@ -6,9 +6,10 @@ import Navbar from './Navbar';
 import CountryInput from './CountryInput';
 import CustomAnimatedNumber from './CustomAnimatedNumber';
 import API from '../api/api';
+import './mobile.css'
 
 function App() {
-  var api=new API();
+  var api = new API();
   return (
     <div className="App">
       <Navbar />

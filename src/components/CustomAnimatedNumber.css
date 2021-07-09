@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
   color: var(--text-color);
-  width: 30vw;
+  width: var(--max-width);
   margin: 40px auto;
 }
 

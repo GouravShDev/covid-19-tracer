@@ -1,0 +1,78 @@
+@media only screen and (max-width: 1268px) {
+  :root {
+    --title-size: 2.8vmin;
+    --max-width: 40vw;
+  }
+
+  .ReactFlagsSelect-module_selectBtn__19wW7 {
+    font-size: 2.2vmin !important ;
+  }
+  .calendar-container {
+    transform: scale(1);
+  }
+  .virus-img-2 {
+    width: 50vmin;
+  }
+  .country-input-container h2 {
+    flex: 3;
+  }
+
+  .ReactFlagsSelect-module_flagsSelect__2pfa2 {
+    flex: 2;
+  }
+}
+@media only screen and (max-width: 850px) {
+  :root {
+    --title-size: 3.5vmin;
+    --max-width: 50vw;
+  }
+
+  .calendar-container {
+    transform: scale(0.9);
+  }
+  .virus-img-2 {
+    width: 40vmin;
+  }
+  .virus-img-1 {
+    width: 20vmin;
+  }
+}
+@media only screen and (max-width: 600px) {
+  :root {
+    --title-size: 4.7vmin;
+    --max-width: 50vw;
+  }
+  .ReactFlagsSelect-module_selectBtn__19wW7 {
+    font-size: 3.8vmin !important ;
+  }
+  .App {
+    overflow-y: visible;
+  }
+
+  .nav-logo {
+    font-size: 6vmin;
+  }
+  .nav-link {
+    font-size: 4vmin;
+  }
+  .country-input-container {
+    flex-direction: column;
+  }
+  .country-input-container h2 {
+    margin: 10px;
+  }
+  .calendar-container {
+    transform: scale(0.8);
+    padding: 0;
+  }
+  .virus-img-2 {
+    width: 40vmin;
+  }
+  .virus-img-1 {
+    width: 20vmin;
+  }
+
+  .ReactFlagsSelect-module_flagsSelect__2pfa2 {
+    width: 100%;
+  }
+}

@@ -1,10 +1,12 @@
 /* ============= Custom Styles ============= */
 
 .calendar-container {
+  transform: scale(1.2);
   display: flex;
   align-items: center;
   justify-content: center;
   margin: auto;
+  padding: 20px;
 }
 
 .react-calendar,
@@ -14,14 +16,6 @@
   text-decoration: none;
 }
 
-/* @media only screen and (max-width: 1200px) {
-  .calendar-container {
-    transform: scale(0.8);
-  }
+.react-calendar {
+  border-radius: 4px;
 }
-
-@media only screen and (max-width: 1032px) {
-  .calendar-container {
-    transform: scale(0.7);
-  }
-} */

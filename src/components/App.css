@@ -30,16 +30,14 @@
 /* ============== SVG Image =============== */
 
 .virus-img-1 {
-  width: 15vw;
+  width: 30vmin;
   position: absolute;
-  display: inline-block;
   left: 0;
-  overflow-y: hidden;
   z-index: -1;
 }
 
 .virus-img-2 {
-  width: 25vw;
+  width: 60vmin;
   position: absolute;
   top: 20%;
   right: -5%;
