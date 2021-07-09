@@ -20,7 +20,7 @@ class API {
         return resp.json();
     }
     async getData(type, country_abrv, date, fn, key) {
-        country=country_codes[country_abrv]
+        var country=country_codes[country_abrv];
         const url=this.api+'/time_series_'+type+'_global';
         //console.log(key);
         key=await key;
@@ -33,13 +33,13 @@ class API {
             }
         };
         this.makeRequest(url, params).then(d => {
-                console.log(d);
+                //console.log(d);
                 var data_arr=d.Document;
                 var data;
                 for (data in data_arr) {
                     //console.log(data_arr[data]);
                     if (data_arr[data].country_region === country) {
-                        fn(data_arr[data][date], 2);
+                        fn(data_arr[data][date]);
                     }
                 }
             }
@@ -56,3 +56,4 @@ var a=new API();
 k=a.init();
 a.getData("recovered", "Afghanistan", "mar232021", fn, k);
 */
+export default API;
