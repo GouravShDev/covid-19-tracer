@@ -28,7 +28,7 @@
   }
 
   .calendar-container {
-    transform: scale(0.9);
+    transform: scale(0.9) !important;
   }
   .virus-img-2 {
     width: 40vmin;
@@ -39,7 +39,7 @@
 }
 @media only screen and (max-width: 600px) {
   :root {
-    --title-size: 4.7vmin;
+    --title-size: 5.5vmin;
     --max-width: 50vw;
   }
   .ReactFlagsSelect-module_selectBtn__19wW7 {
@@ -57,13 +57,14 @@
   }
   .country-input-container {
     flex-direction: column;
+    margin: 0 auto !important;
   }
   .country-input-container h2 {
     margin: 10px;
   }
   .calendar-container {
     transform: scale(0.8);
-    padding: 0;
+    padding: 0 !important;
   }
   .virus-img-2 {
     width: 40vmin;
@@ -74,5 +75,9 @@
 
   .ReactFlagsSelect-module_flagsSelect__2pfa2 {
     width: 100%;
+  }
+
+  .anim-number-container {
+    margin: 10px auto !important;
   }
 }

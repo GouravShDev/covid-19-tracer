@@ -13,11 +13,11 @@ export default function Tracer() {
 
     const [cases, setCases] = useState({ confirmed: 0, deaths: 0, recovered: 0 });
 
-    function processData() {
-        console.log(`${country} ${date}`);
+    function processData(newDate) {
+        console.log(`${country} ${newDate}`);
         var api = new API();
         Object.keys(cases).forEach((key) => {
-            api.getData(key, country, date, (covidCases) => {
+            api.getData(key, country, newDate, (covidCases) => {
                 if (covidCases) {
                     setCases((prevCases) => {
                         return { ...prevCases, [key]: covidCases };
@@ -44,14 +44,14 @@ export default function Tracer() {
             <div className="calendar-container">
                 <ReactCalendar
                     value={date}
-                    maxDate={new Date()}
+                    maxDate={new Date(new Date().setDate(new Date().getDate() - 3))}
                     minDate={new Date(2021, 0, 1)}
                     onChange={(newDate) => {
                         if (!country) {
                             alert('Select Country first');
                         } else {
                             setDate(newDate);
-                            processData();
+                            processData(newDate);
                         }
                     }}
                 />
