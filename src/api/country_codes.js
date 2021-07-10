@@ -221,5 +221,7 @@ const countries_codes = {
     ZM: "Zambia",
     ZW: "Zimbabwe",
   };
-
-  export default countries_codes;
+const month_names = ["jan", "feb", "mar", "apr", "may", "jun",
+  "jul", "aug", "sep", "oct", "nov", "dec"
+];
+export {countries_codes, month_names};

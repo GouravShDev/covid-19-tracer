@@ -17,12 +17,14 @@ export default function Tracer() {
         console.log(`${country} ${date}`);
         var api = new API();
         Object.keys(cases).forEach((key) => {
-            api.getData(key, country, "mar232021", (covidCases) => {
-                setCases((prevCases) => {
-                    return { ...prevCases, [key]: covidCases };
-                })
-            });
-        })
+            api.getData(key, country, date, (covidCases) => {
+                if (covidCases) {
+                    setCases((prevCases) => {
+                        return { ...prevCases, [key]: covidCases };
+                    });
+                }
+            })
+        });
     }
     return (
         <div>
