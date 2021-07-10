@@ -3,6 +3,7 @@ import ReactFlagsSelect from 'react-flags-select';
 import ReactCalendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import './CustomCalendar.css';
+import './mobile.css'
 import './CountryInput.css'
 import CustomAnimatedNumber from './CustomAnimatedNumber';
 import API from '../api/api'

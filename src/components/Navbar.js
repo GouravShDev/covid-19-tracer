@@ -1,6 +1,7 @@
 import React from 'react'
 import virus from '../assests/svg/virus.svg';
 import './Navbar.css'
+// import './mobile.css'
 
 export default function Navbar() {
     return (

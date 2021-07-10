@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import virus from '../assests/svg/virus.svg';
 import Navbar from './Navbar';
-import './mobile.css'
 import Tracer from './Tracer';
 
 function App() {

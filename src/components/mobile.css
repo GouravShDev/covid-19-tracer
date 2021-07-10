@@ -1,3 +1,9 @@
+/* =============== Styles for various mobile sizes =============== */
+
+.ReactFlagsSelect-module_selectBtn__19wW7 {
+  font-size: 2.4vmin !important;
+}
+
 @media only screen and (max-width: 1268px) {
   :root {
     --title-size: 2.8vmin;
@@ -5,7 +11,7 @@
   }
 
   .ReactFlagsSelect-module_selectBtn__19wW7 {
-    font-size: 2.2vmin !important ;
+    font-size: 2.5vmin !important ;
   }
   .calendar-container {
     transform: scale(1);
