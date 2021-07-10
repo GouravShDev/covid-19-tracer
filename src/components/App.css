@@ -6,8 +6,7 @@
 }
 
 /* ============== SVG Animation =============== */
-
-@media (prefers-reduced-motion: no-preference) {
+@media () {
   .virus-logo {
     animation: virus-logo-spin infinite 30s alternate-reverse;
   }

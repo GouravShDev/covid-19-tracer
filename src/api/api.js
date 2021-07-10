@@ -1,4 +1,4 @@
-import {countries_codes, month_names} from "./country_codes";
+import {countries_codes, month_names} from "./country_months";
 class API {
     constructor() {
         this.api = 'https://api.covid19api.dev';
@@ -21,22 +21,11 @@ class API {
         //console.log(resp);
         return resp.json();
     }
-    dateToString(date) {
-        var dd=date.getDate().toString();
-        if (dd.length===1) {
-            dd="0"+dd;
-        }
-        var full_year=date.getFullYear();
-        var month=date.getMonth();
-        var mon=month_names[month];
-        return `${mon}${dd}${full_year}`;
-    }
-    async getData(type, country_abrv, d, callbackFn) {
-        var country = countries_codes[country_abrv];
+    async getData(type, callbackFn) {
         const url = `${this.api}/time_series_${type}_global`;
         //console.log(key);
-        let key;
-
+        var key;
+        var country;
         if (this.key) {
             key = this.key;
         } else {
@@ -51,21 +40,43 @@ class API {
                 "Authorization": key
             }
         };
-        var date=this.dateToString(d);
+        var data_arr;
+        var data;
+        var country;
+        var cases={};
         //var date=d;
-        console.log(date);
         this.makeRequest(url, params).then(d => {
             //console.log(d);
-            var data_arr = d.Document;
-            var data;
+            data_arr = d.Document;
             for (data in data_arr) {
                 //console.log(data_arr[data]);
-                if (data_arr[data].country_region === country) {
-                    console.log(data_arr[data][date]);
-                    callbackFn(data_arr[data][date]);
-                }
+                //console.log(data_arr[data]);
+                delete data_arr[data]["id"];
+                delete data_arr[data]["province_state"];
+                delete data_arr[data]["latitude"];
+                delete data_arr[data]["longitude"];
+                country=data_arr[data]["country_region"];
+                delete data_arr[data]["country_region"];
+                cases[country]=data_arr[data];
             }
+            //console.log(cases);
+            return callbackFn(cases);
         }
         );
     }
-} export default API;
+} 
+const dateToString = (date) => {
+    var dd=date.getDate().toString();
+    if (dd.length===1) {
+        dd="0"+dd;
+    }
+    var full_year=date.getFullYear();
+    var month=date.getMonth();
+    var mon=month_names[month];
+    return `${mon}${dd}${full_year}`;
+}
+const countryCodeToString = (code) => {
+    return countries_codes[code];
+}
+export default API;
+export {dateToString, countryCodeToString};
