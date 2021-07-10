@@ -1,10 +1,9 @@
-import country_codes from "./country_codes";
+import {countries_codes, month_names} from "./country_codes";
 class API {
     constructor() {
         this.api = 'https://api.covid19api.dev';
     }
     async init() {
-
         const url = this.api + '/token';
         var params = {
             method: "POST",
@@ -22,8 +21,18 @@ class API {
         //console.log(resp);
         return resp.json();
     }
-    async getData(type, country_abrv, date, callbackFn) {
-        var country = country_codes[country_abrv];
+    dateToString(date) {
+        var dd=date.getDate().toString();
+        if (dd.length===1) {
+            dd="0"+dd;
+        }
+        var full_year=date.getFullYear();
+        var month=date.getMonth();
+        var mon=month_names[month];
+        return `${mon}${dd}${full_year}`;
+    }
+    async getData(type, country_abrv, d, callbackFn) {
+        var country = countries_codes[country_abrv];
         const url = `${this.api}/time_series_${type}_global`;
         //console.log(key);
         let key;
@@ -32,8 +41,9 @@ class API {
             key = this.key;
         } else {
             key = await this.init();
+            this.key=key;
         }
-        console.log(key);
+        //console.log(key);
         var params = {
             method: "GET",
             headers: {
@@ -41,6 +51,9 @@ class API {
                 "Authorization": key
             }
         };
+        var date=this.dateToString(d);
+        //var date=d;
+        console.log(date);
         this.makeRequest(url, params).then(d => {
             //console.log(d);
             var data_arr = d.Document;
@@ -48,6 +61,7 @@ class API {
             for (data in data_arr) {
                 //console.log(data_arr[data]);
                 if (data_arr[data].country_region === country) {
+                    console.log(data_arr[data][date]);
                     callbackFn(data_arr[data][date]);
                 }
             }
