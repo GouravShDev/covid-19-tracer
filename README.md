@@ -1,3 +1,28 @@
+# COVID-19 Tracer
+
+Covid19 Tracer is a react based site which provides live data on COVID-19 cases with the help of Global Coronavirus API. This site shows data of all countries covid-19 cases including recovered and death cases.
+
+## Feature
+
+- [x] Provides data about Covid-19 cases
+- [x] Shows number of confirmed cases
+- [x] Provide data for all countries
+
+## Site Link
+
+Check out the live site [Here](https://covid-19-tracer-7a6d8.web.app/).
+
+## Screenshots
+
+<img src="screenshots/1.jpg" style="margin: 20px auto; width: 100vmin">
+<img src="screenshots/2.jpg" style="margin: 20px auto; width: 100vmin">
+<!-- <div style = "display: flex"> -->
+<div style = "width : 100vmin; align-items: center; display : flex; justify-content : space-between; margin-bottom: 40px">
+<img src="screenshots/3.png" style=" width:40vmin">
+<img src="screenshots/4.png" style="width:40vmin">
+</div>
+<!-- </div> -->
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
