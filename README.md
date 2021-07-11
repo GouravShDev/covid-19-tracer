@@ -17,7 +17,7 @@ Check out the live site [Here](https://covid-19-tracer-7a6d8.web.app/).
 <img src="screenshots/1.jpg" >
 <img src="screenshots/2.jpg" >
 <p float="left">
-<img src="screenshots/3.png" width = '200'> &nbsp;&nbsp;&nbsp;&nbsp<img src="screenshots/4.png" width = '200'> &nbsp;&nbsp;&nbsp;&nbsp;<img src="screenshots/5.png" width = '200'> &nbsp;&nbsp;&nbsp;&nbsp<img src="screenshots/6.png" width = '200'></p>
+<img src="screenshots/3.png" width = '200'>&nbsp;&nbsp;&nbsp;&nbsp<img src="screenshots/4.png" width = '200'>&nbsp;&nbsp;&nbsp;&nbsp;<img src="screenshots/5.png" width = '200'>&nbsp;&nbsp;&nbsp;&nbsp<img src="screenshots/6.png" width = '200'></p>
 
 # Getting Started with Create React App
 
