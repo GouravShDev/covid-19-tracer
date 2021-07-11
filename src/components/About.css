@@ -1,0 +1,34 @@
+.About {
+  text-align: center;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.contributors {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+  padding: 1vh;
+  width: 60vw;
+}
+
+.about-content {
+  background-color: rgba(29, 29, 29, 80%);
+  width: 50vw;
+  padding: 1.6vw;
+  text-align: start;
+  margin: 4vh auto;
+  color: var(--text-color);
+  border: rgba(255, 255, 255, 50%) 1px solid;
+  border-radius: 8px;
+  /* box-shadow: 2px 4px rgba(255, 255, 255, 10%); */
+}
+.about-content h1 {
+  font-size: 2.5vmin;
+  margin-bottom: 2vh;
+}
+.about-content p {
+  font-size: 2.2vmin;
+}

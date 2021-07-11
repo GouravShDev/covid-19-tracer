@@ -17,7 +17,7 @@
     transform: scale(1);
   }
   .virus-img-2 {
-    width: 50vmin;
+    width: 40vmin !important;
   }
   .country-input-container h2 {
     flex: 3;
@@ -25,6 +25,23 @@
 
   .ReactFlagsSelect-module_flagsSelect__2pfa2 {
     flex: 2;
+  }
+  .contributor h2 {
+    font-size: 2.8vmin !important;
+  }
+  .contributor span {
+    font-size: 3.8vmin !important;
+  }
+
+  .about-content {
+    width: 70vw !important;
+  }
+
+  .contributors {
+    width: 70vw !important;
+  }
+  .contributor h3 {
+    font-size: 2.2vmin !important;
   }
 }
 @media only screen and (max-width: 850px) {
@@ -37,10 +54,36 @@
     transform: scale(0.9) !important;
   }
   .virus-img-2 {
-    width: 40vmin;
+    width: 25vmin !important;
   }
   .virus-img-1 {
-    width: 20vmin;
+    width: 20vmin !important;
+    bottom: 15% !important;
+  }
+  .contributor h2 {
+    font-size: 3vmin !important;
+  }
+  .contributor span {
+    font-size: 4vmin !important;
+  }
+  .about-content {
+    width: 80vw !important;
+  }
+  .contributors {
+    width: 80vw !important;
+  }
+  .pic {
+    width: 25vmin !important;
+  }
+  .about-content h1 {
+    font-size: 4vmin !important;
+  }
+  .about-content p {
+    font-size: 3vmin !important;
+  }
+  .contributor h3 {
+    color: rgba(255, 255, 255, 70%);
+    font-size: 2.8vmin !important;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -85,5 +128,8 @@
 
   .anim-number-container {
     margin: 10px auto !important;
+  }
+  .contributors {
+    width: 90vw !important;
   }
 }
