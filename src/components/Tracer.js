@@ -5,13 +5,12 @@ import 'react-calendar/dist/Calendar.css';
 import './CustomCalendar.css';
 import './CountryInput.css'
 import CustomAnimatedNumber from './CustomAnimatedNumber';
-import API, {dateToString, countryCodeToString} from '../api/api'
+import API, {dateToString, countryCodeToString, graphFormat} from '../api/api'
 import CustomGraph from './CustomGraph';
 
 export default function Tracer() {
     const [country, setCountry] = useState("");
     const [date, setDate] = useState(new Date());
-    const d = [{name: 'Page A', uv: 400}, {name: 'Page B', uv: 300}];
     const [cases, setCases]=useState({confirmed: 0, deaths: 0, recovered: 0});
     const [casesData, setcasesData] = useState({confirmed: null, deaths: null, recovered: null});
     useEffect(() => {
@@ -22,7 +21,9 @@ export default function Tracer() {
         });
         setcasesData(temp);
     }, []);
-    console.log(casesData);
+    //console.log(casesData);
+    const d = graphFormat(casesData, country, date.getMonth(), date.getFullYear().toString());
+    //console.log(d);
     function processData() {
         console.log(`${country} ${date}`);
         var date_string=dateToString(date);

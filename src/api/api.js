@@ -42,7 +42,6 @@ class API {
         };
         var data_arr;
         var data;
-        var country;
         var cases={};
         //var date=d;
         this.makeRequest(url, params).then(d => {
@@ -78,5 +77,31 @@ const dateToString = (date) => {
 const countryCodeToString = (code) => {
     return countries_codes[code];
 }
+const graphFormat = (data, country, month, year_str) => {
+    var res=[];
+    if (data["recovered"]===null) {
+        return res;
+    }
+    var date;
+    var type;
+    var temp;
+    var c=countryCodeToString(country);
+    var month_name=month_names[month];
+    //console.log(data["recovered"][c]);
+    for (date in data["confirmed"][c]) {
+        if (date.includes(month_name) && date.includes(year_str)) {
+            console.log(date);
+            temp={};
+            temp["date"]=date;
+            for (type in data) {
+                temp[type]=data[type][c][date];
+            }
+            //console.log(temp);
+            res.push(temp);
+        }
+    }
+    console.log(res);
+    return res;
+}
 export default API;
-export {dateToString, countryCodeToString};
+export {dateToString, countryCodeToString, graphFormat};
