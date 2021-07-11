@@ -14,14 +14,10 @@ Check out the live site [Here](https://covid-19-tracer-7a6d8.web.app/).
 
 ## Screenshots
 
-<img src="screenshots/1.jpg" style="margin: 20px auto; width: 100vmin">
-<img src="screenshots/2.jpg" style="margin: 20px auto; width: 100vmin">
-<!-- <div style = "display: flex"> -->
-<div style = "width : 100vmin; align-items: center; display : flex; justify-content : space-between; margin-bottom: 40px">
-<img src="screenshots/3.png" style=" width:40vmin">
-<img src="screenshots/4.png" style="width:40vmin">
-</div>
-<!-- </div> -->
+<img src="screenshots/1.jpg" >
+<img src="screenshots/2.jpg" >
+<p float="left">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="screenshots/3.png" width = '200'>&nbsp;&nbsp;&nbsp;&nbsp;<img src="screenshots/4.png" width = '200'> &nbsp;&nbsp;&nbsp;&nbsp;<img src="screenshots/5.png" width = '200'>&nbsp;&nbsp;&nbsp;&nbsp;<img src="screenshots/6.png" width = '200'></p>
 
 # Getting Started with Create React App
 
