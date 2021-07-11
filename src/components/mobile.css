@@ -88,7 +88,7 @@
 }
 @media only screen and (max-width: 600px) {
   :root {
-    --title-size: 5.5vmin;
+    --title-size: 5vw;
     --max-width: 50vw;
   }
   .ReactFlagsSelect-module_selectBtn__19wW7 {
@@ -128,6 +128,7 @@
 
   .anim-number-container {
     margin: 10px auto !important;
+    width: 70vw !important;
   }
   .contributors {
     width: 90vw !important;

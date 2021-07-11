@@ -9,7 +9,9 @@ export default function CustomAnimatedNumber({ caseType, textColor, number }) {
     const [windowWidth, setWindowWidth] = useState(window.innerHeight);
 
     useEffect(() => {
-        window.addEventListener('resize', () => { setWindowWidth(window.innerWidth) });
+        let isMounted = true;
+        window.addEventListener('resize', () => { if (isMounted) setWindowWidth(window.innerWidth) });
+        return () => { isMounted = false; };
     })
 
     return (
@@ -25,7 +27,7 @@ export default function CustomAnimatedNumber({ caseType, textColor, number }) {
                 config={{ mass: 1, tension: 280, friction: 120 }}
                 onStart={() => console.log("onStart")}
                 onFinish={() => console.log("onFinish")}
-                animationType={"calm"}
+                animationType={"random"}
             />
 
         </div>
