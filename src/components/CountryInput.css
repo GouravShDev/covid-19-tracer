@@ -1,0 +1,80 @@
+.country-input-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: var(--max-width);
+  margin: 1vh auto;
+  padding: 1vh 0;
+  color: var(--text-color);
+}
+
+.country-input-container h2 {
+  font-size: var(--title-size);
+  text-align: start;
+  margin-right: 5px;
+}
+
+/* ================== Custom Styles for ReactFlagSelectWidget ====================== */
+
+.ReactFlagsSelect-module_selectBtn__19wW7 {
+  color: var(--text-color) !important;
+  min-width: 10vw;
+  /* font-size: 2.4vmin !important; */
+  border: thin solid rgba(119, 119, 119, 0.589) !important;
+}
+
+.ReactFlagsSelect-module_selectOptions__3LNBJ {
+  background-color: var(--body-color) !important;
+  border: 1px solid #3a3a3a !important;
+}
+
+.ReactFlagsSelect-module_selectOptionWithlabel__2GpmM:hover {
+  background-color: black !important;
+}
+
+.ReactFlagsSelect-module_filterBox__3m8EU {
+  background: var(--body-color) !important;
+}
+
+.ReactFlagsSelect-module_filterBox__3m8EU input {
+  background-color: rgba(255, 255, 255, 0.295);
+  border-radius: 4px;
+  color: var(--text-color);
+}
+
+/* ============Custom Scrollbar ================= */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #313131;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(185, 185, 185);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(116, 116, 116);
+}
+
+/* ============SearchBar placeholder ================= */
+::-webkit-input-placeholder {
+  /* Edge */
+  color: var(--text-color);
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer */
+  color: var(--text-color);
+}
+
+::placeholder {
+  color: var(--text-color);
+}

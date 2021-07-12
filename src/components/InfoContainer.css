@@ -1,0 +1,49 @@
+.contributor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* width: 60vw; */
+  /* margin: auto; */
+  /* background-color: rebeccapurple; */
+}
+.contributor h2 {
+  margin: 2vh;
+  font-size: 4vmin;
+  color: wheat;
+}
+.social-links {
+  display: flex;
+  width: 15vw;
+  margin-top: 1vh;
+  align-items: center;
+  justify-content: center;
+}
+.contributor span {
+  color: var(--text-color);
+}
+.contributor h3 {
+  color: rgba(255, 255, 255, 70%);
+  font-size: 2vmin;
+}
+.pic {
+  width: 20vmin;
+}
+.contributor img {
+  border-radius: 50%;
+}
+
+.social-icon {
+  margin: 1vh auto;
+  cursor: pointer;
+  font-size: 4.5vmin;
+}
+
+.contributor span {
+  margin: 10px;
+  font-size: 5vmin;
+}
+
+.social-icon:hover {
+  filter: brightness(150%);
+}

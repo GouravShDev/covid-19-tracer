@@ -1,0 +1,21 @@
+/* ============= Custom Styles ============= */
+
+.calendar-container {
+  transform: scale(1.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 20px;
+}
+
+.react-calendar,
+.react-calendar *,
+.react-calendar *:before,
+.react-calendar *:after {
+  text-decoration: none;
+}
+
+.react-calendar {
+  border-radius: 4px;
+}

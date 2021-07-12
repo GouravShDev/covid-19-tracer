@@ -1,0 +1,12 @@
+.anim-number-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--text-color);
+  width: var(--max-width);
+  margin: 40px auto;
+}
+
+.anim-number-container h2 {
+  font-size: var(--title-size);
+}
